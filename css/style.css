@@ -98,7 +98,7 @@ header .bar{
     overflow:hidden;
     background-image: url(../image/Máy-Tính-HTl_vũ-trụ-mới_-37-1-1024x683.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     display: flex;
     align-items: center;
     position: relative;
