@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+:root{
+    --color-one: #232323;
+    --color-two: #F7D9C4;
+    --color-text: #777777;
+    --color-three: #fff;
+    --color-base: #EFEFEF;
+}
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #EFEFEF;
+}
+.container {
+    width: 100%;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 1228px){
+    .container{
+        max-width: 80%;
+    }
+}

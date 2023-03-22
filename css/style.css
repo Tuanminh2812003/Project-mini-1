@@ -1,0 +1,1371 @@
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    overflow: hidden;
+    background-color: var(--color-base);
+}
+a{
+    text-decoration: none;
+}
+header .inner-wrap{
+    margin-left: 50px;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+}
+header .logo img {
+    width: auto;
+    height: 48px;
+    margin-right: 15px;
+}
+header .logo span{
+    color: var(--color-one);
+    font-size: 25px;
+    font-weight: 700;
+}
+header .menu ul{
+    display: flex;
+    list-style: none;
+}
+header .menu ul li{
+    height: 120px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+header .menu ul li:hover{
+    background-color: var(--color-three);
+}
+header .menu ul li a{
+    color: var(--color-one);
+    font-size: 18px;
+    font-weight: 500;
+}
+header .social ul{
+    display: flex;
+    list-style-type: none;
+    margin-right: 50px;
+}
+header .social ul a{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-color: var(--color-three);
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: var(--color-one);
+    font-size: 22px;
+}
+header .bar{
+    margin-right: 50px;
+    display: none;
+    font-size: 20px;
+}
+@media (max-width: 992px){
+    header .menu{
+        display: none;
+    }
+}
+@media (max-width: 992px){
+    header .social{
+        display: none;
+    }
+}
+@media (max-width: 992px){
+    header .bar{
+        display: block;
+    }
+}
+/*End Header*/
+/*Picture-main*/
+.picture-main{
+    width:100%;
+    height: 580px;
+    overflow:hidden;
+    background-image: url(/hoc_front_end_2023/Do-Tuan_Minh-project-1/image/Máy-Tính-HTl_vũ-trụ-mới_-37-1-1024x683.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}   
+.picture-main .inner-title{
+    color: var(--color-three);
+    position: relative;
+    z-index: 1;
+}
+.picture-main .inner-title .disc-1{
+    font-size: 17px;
+    font-weight: 500;
+}
+.picture-main .inner-title .title{
+    font-size: 50px;
+    margin-top: 0px;
+}
+.picture-main .inner-title .disc-2{
+    color: #BBBBBB;
+    font-size: 17px;
+}
+.picture-main .button{
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+.picture-main .button-1{
+    background-color: var(--color-two);
+    height: 55px;
+    width: 170px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-right: 25px;
+    color: var(--color-one)
+}
+.picture-main .button-1:hover{
+    background-color: var(--color-three);
+}
+.picture-main .button-2:hover{
+    border: var(--color-two);
+    background-color: var(--color-two);
+}
+.picture-main .button-2{
+    background-color: unset;
+    border: 2px solid var(--color-text);
+    height: 55px;
+    width: 150px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 40px;
+    color: var(--color-three);
+}
+.picture-main .bgrden{
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+@media (max-width: 770px){
+    .picture-main .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .picture-main .container .inner-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .picture-main .container .inner-title .disc-2{
+        text-align: center;
+    }
+}
+/*END Picture-main*/
+/*Section-1*/
+.section-1{
+    margin-top: 100px;
+}
+.section-1 .container{
+    display: flex;
+}
+.section-1 .container .inner-img img{
+    width: 490px;
+    height:auto;
+    border-radius: 12px;
+}
+.section-1 .container .inner-text{
+    margin-left: 75px;
+}
+.section-1 .container .inner-text .disc-1{
+    font-size: 18px;
+    color: var(--color-text);
+    font-weight: 600;
+}
+.section-1 .container .inner-text .title{
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--color-one);
+}
+.section-1 .container .inner-text .inner-button{
+    margin-top: 30px;
+    display: flex;
+}
+.section-1 .container .inner-text .inner-button .button-design{
+    color: #FF8989;
+    background-color: var(--color-three);
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section-1 .container .inner-text .inner-button .button-design i{
+    font-size: 50px;
+}
+.section-1 .container .inner-text .inner-button .button-design span{
+    font-size: 15px;
+    color: var(--color-one);
+    font-weight: 550;
+    margin-top: 20px;
+}
+.section-1 .container .inner-text .inner-button .button-usage{
+    color: #FF8989;
+    background-color: var(--color-three);
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 25px;
+}
+.section-1 .container .inner-text .inner-button .button-usage i{
+    font-size: 50px;
+}
+.section-1 .container .inner-text .inner-button .button-usage span{
+    font-size: 15px;
+    color: var(--color-one);
+    font-weight: 550;
+    margin-top: 20px;
+}
+.section-1 .container .inner-text .inner-button .button-testing{
+    color: #FF8989;
+    background-color: var(--color-three);
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 25px;
+}
+.section-1 .container .inner-text .inner-button .button-testing i{
+    font-size: 50px;
+}
+.section-1 .container .inner-text .inner-button .button-testing span{
+    font-size: 15px;
+    color: var(--color-one);
+    font-weight: 550;
+    margin-top: 20px;
+}
+.section-1 .container .inner-text .disc-2{
+    margin-top: 30px;
+    color: var(--color-text);
+    font-weight: 500;
+}
+.section-1 .container .inner-text a{
+    background-color: var(--color-two);
+    width: 175px;
+    height: 65px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-one);
+    font-weight: 600;
+    margin-top: 30px;
+}
+.section-1 .container .inner-text a:hover{
+    background-color: var(--color-three);
+}
+@media (max-width: 1228px){
+    .section-1 .container .inner-img img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 992px){
+    .section-1 .container{
+        flex-direction: column;
+    }
+}
+@media (max-width: 770px){
+    .section-1 .container{
+        align-items: center;
+        justify-content: center;
+    }
+    .section-1 .container .inner-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .section-1 .container .inner-text .inner-button{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .section-1 .container .inner-text .inner-button div{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+/*END Section-1*/
+/*Section-2*/
+.section-2 .container{
+    display: flex;
+    margin-top: 100px;
+    background-color: var(--color-three);
+    height: 380px;
+    border-radius: 10px;
+    align-items: center;
+    padding: 50px;
+}
+.section-2 .container .inner-text .disc{
+    color: var(--color-text);
+    font-weight: 600;
+}
+.section-2 .container .inner-text .title{
+    margin-top: 30px;
+    font-size: 65px;
+    font-weight: 700;
+}
+.section-2 .container .inner-img{
+    margin-left: 80px;
+    margin-right: 60px;
+    position: relative;
+    bottom: 40.5px;
+}
+.section-2 .container .inner-img img{
+    width: 360px;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+@media (max-width: 1228px){
+    .section-2{
+        margin-top: 200px;
+    }
+    .section-2 .container .inner-text .title{
+        font-size: 40px;
+    }
+}
+@media (max-width: 992px){
+    .section-2 .container{
+        height: 750px;
+        flex-direction: column;
+    }
+    .section-2 .container .inner-img{
+        bottom:  -95px;
+    }
+}
+/*END Section-2*/
+/*Our Goal*/
+.our-goal{
+    width: 100%;
+    height: 50%;
+    background-color: var(--color-three);
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+.our-goal .title{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--color-one);
+}
+.our-goal .disc{
+    margin-top: 23px;
+    color: var(--color-text);
+    font-size: 18px;
+}
+.our-goal .inner-icon{
+    display: flex;
+}
+.inner-icon-1-1, .inner-icon-1-2, .inner-icon-2-1, .inner-icon-2-2, .inner-icon-3-1, .inner-icon-3-2{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.our-goal .inner-icon i{
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #EFEFEF;
+    color: var(--color-one);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our-goal .inner-icon span{
+    margin-left: 20px;
+    margin-right: 125px;
+    color: var(--color-text);
+}
+@media (max-width: 992px){
+    .our-goal .inner-icon{
+        flex-direction: column;
+    }
+}
+@media (max-width: 770px){
+    .our-goal .title{
+        text-align: center;
+    }
+    .our-goal .disc{
+        text-align: center;
+    }
+}
+/*END Our Goal*/
+/*Core Features*/
+.core-features .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.core-features .container .inner-title{
+    margin-top: 70px;
+    font-size: 60px;
+    font-weight: 800;
+}
+.core-features .container .inner-card{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.core-features .container .inner-card .card-1{
+    background-color: var(--color-three);
+    width: 30%;
+    height: 340px;  
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 45px;
+    position: relative;
+}
+.core-features .container .inner-card .card-1 .img{
+    width: 100%;
+    height: 70%;
+    background-image: url(/hoc_front_end_2023/Do-Tuan_Minh-project-1/image/features1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.core-features .container .inner-card .card-1 .disc{
+    color: var(--color-text);
+    font-weight: 500;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.core-features .container .inner-card .card-1 .main-text{
+    color: var(--color-one);
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-weight: 800;
+}
+.core-features .container .inner-card .card-1 .button{
+    width: 75px;
+    height: 75px;
+    background-color: var(--color-three);
+    box-shadow: 0px 16px 32px 0px #0000000a;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-one);
+    bottom: 65px;
+    right: 45px;
+    border-radius: 15px;
+    font-size: 25px;
+}
+.core-features .container .inner-card .card-2{
+    background-color: var(--color-three);
+    width: 30%;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 45px;
+    position: relative;
+    margin-left: 30px;
+}
+.core-features .container .inner-card .card-2 .img{
+    width: 100%;
+    height: 70%;
+    background-image: url(/hoc_front_end_2023/Do-Tuan_Minh-project-1/image/features2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.core-features .container .inner-card .card-2 .disc{
+    color: var(--color-text);
+    font-weight: 500;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.core-features .container .inner-card .card-2 .main-text{
+    color: var(--color-one);
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-weight: 800;
+}
+.core-features .container .inner-card .card-2 .button{
+    width: 75px;
+    height: 75px;
+    background-color: var(--color-three);
+    box-shadow: 0px 16px 32px 0px #0000000a;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-one);
+    bottom: 65px;
+    right: 45px;
+    border-radius: 15px;
+    font-size: 25px;
+}
+.core-features .container .inner-card .card-3{
+    background-color: var(--color-three);
+    width: 30%;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 45px;
+    position: relative;
+    margin-left: 30px;
+}
+.core-features .container .inner-card .card-3 .img{
+    width: 100%;
+    height: 70%;
+    background-image: url(/hoc_front_end_2023/Do-Tuan_Minh-project-1/image/features3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.core-features .container .inner-card .card-3 .disc{
+    color: var(--color-text);
+    font-weight: 500;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.core-features .container .inner-card .card-3 .main-text{
+    color: var(--color-one);
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-weight: 800;
+}
+.core-features .container .inner-card .card-3 .button{
+    width: 75px;
+    height: 75px;
+    background-color: var(--color-three);
+    box-shadow: 0px 16px 32px 0px #0000000a;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-one);
+    bottom: 65px;
+    right: 45px;
+    border-radius: 15px;
+    font-size: 25px;
+}
+@media (max-width: 992px){
+    .core-features .container .inner-card{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .core-features .container .inner-card .card-1{
+        width: 40%;
+        margin-left: 0px;
+    }
+    .core-features .container .inner-card .card-2{
+        width: 40%;
+        margin-left: 20px;
+    }
+    .core-features .container .inner-card .card-3{
+        width: 40%;
+        margin-left: 0px;
+    }
+}
+@media (max-width: 770px){
+    .core-features .container .inner-card .card-1{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .core-features .container .inner-card .card-2{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .core-features .container .inner-card .card-3{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+/*END Core Features*/
+/*Section-3*/
+.section-3{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background-color: var(--color-one);
+    margin-top: 90px;
+    padding: 100px 0px;
+}
+.section-3 .container{
+    display: flex;
+    background-color: var(--color-three);
+    align-items: center;
+    border-radius: 25px;
+}
+.section-3 .container .inner-title{
+    margin-left: 80px;
+    width: 55%;
+}
+.section-3 .container .inner-title .disc{
+    color: var(--color-text);
+    font-size: 18px;
+    font-weight: 550;
+}
+.section-3 .container .inner-title .title{
+    color: var(--color-one);
+    font-size: 60px;
+    font-weight: 1000;
+    margin-top: 30px;
+}
+.section-3 .container .inner-button{
+    margin-left: 20px;
+    width: 50%;
+}
+.section-3 .container .inner-button .card-1{
+    display: flex;
+    width: 80%;
+    height: 60px;
+    border: #EFEFEF solid 1px;
+    border-radius: 8px;
+    color: var(--color-text);
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 10px;
+}
+.section-3 .container .inner-button .card-1 .text{
+    margin-left: 15px;
+}
+.section-3 .container .inner-button .card-1 .fa-arrow-right{
+    margin-left: 100px;
+}
+.section-3 .container .inner-button .card-2{
+    display: flex;
+    width: 80%;
+    height: 60px;
+    border: #EFEFEF solid 1px;
+    border-radius: 8px;
+    color: var(--color-text);
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.section-3 .container .inner-button .card-2 .text{
+    margin-left: 15px;
+}
+.section-3 .container .inner-button .card-2 .fa-arrow-right{
+    margin-left: 100px;
+}
+.section-3 .container .inner-button .card-3{
+    display: flex;
+    width: 80%;
+    height: 60px;
+    border: #EFEFEF solid 1px;
+    border-radius: 8px;
+    color: var(--color-text);
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.section-3 .container .inner-button .card-3 .text{
+    margin-left: 15px;
+}
+.section-3 .container .inner-button .card-3 .fa-arrow-right{
+    margin-left: 100px;
+}
+@media (max-width: 992px){
+    .section-3{
+        height: 800px;
+    }
+    .section-3 .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-3 .container .inner-title .title{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .section-3 .container .inner-button .card-1{
+        width: 100%;
+    }
+    .section-3 .container .inner-button .card-2{
+        width: 100%;
+    }
+    .section-3 .container .inner-button .card-3{
+        width: 100%;
+    }
+}
+/*END Section-3*/
+/*Our Team*/
+.our-team .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.our-team .container .inner-title{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.our-team .container .inner-title .disc-main{
+    color: var(--color-text);
+    font-weight: 500;
+}
+.our-team .container .inner-title .title{
+    margin-top: 10px;
+    font-size: 60px;
+    font-weight: 800;
+}
+.our-team .container .inner-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.our-team .container .inner-card .card-1{
+    background-color: var(--color-three);
+    width: 250px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.our-team .container .inner-card .card-1 .img{
+    width: 150px;
+    height: 150px;
+    background-image: url(/hoc_front_end_2023/Do-Tuan_Minh-project-1/image/team1.jpg);
+    background-size: cover;
+    margin-top: 50px;
+    background-position: center;
+    border-radius: 80px;
+}
+.our-team .container .inner-card .card-1 .name-1{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--color-one);
+}
+.our-team .container .inner-card .card-1 .name-2{
+    font-weight: 500;
+    color: var(--color-text);
+    margin-top: -30px;
+}
+.our-team .container .inner-card .card-1 .button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+.our-team .container .inner-card .card-1 .button .button-1{
+    width: 40px;
+    height: 45px;
+    background-color: var(--color-base);
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-team .container .inner-card .card-1 .button .button-1 a{
+    color: var(--color-one);
+}
+.our-team .container .inner-card .card-1 .button .button-1:hover{
+    background-color: var(--color-two);
+}
+.our-team .container .inner-card .card-1 .button .button-1 a:hover{
+    color: var(--color-three);
+}
+
+.our-team .container .inner-card .card-1 .button .button-2{
+    width: 40px;
+    height: 45px;
+    background-color: var(--color-base);
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-team .container .inner-card .card-1 .button .button-2 a{
+    color: var(--color-one);
+}
+.our-team .container .inner-card .card-1 .button .button-2:hover{
+    background-color: var(--color-two);
+}
+.our-team .container .inner-card .card-1 .button .button-2 a:hover{
+    color: var(--color-three);
+}
+
+.our-team .container .inner-card .card-1 .button .button-3{
+    width: 40px;
+    height: 45px;
+    background-color: var(--color-base);
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-team .container .inner-card .card-1 .button .button-3 a{
+    color: var(--color-one);
+}
+.our-team .container .inner-card .card-1 .button .button-3:hover{
+    background-color: var(--color-two);
+}
+.our-team .container .inner-card .card-1 .button .button-3 a:hover{
+    color: var(--color-three);
+}
+
+
+.our-team .container .inner-card .card-2{
+    background-color: var(--color-three);
+    width: 250px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.our-team .container .inner-card .card-2 .img{
+    width: 150px;
+    height: 150px;
+    background-image: url(/hoc_front_end_2023/Do-Tuan_Minh-project-1/image/team2.jpg);
+    background-size: cover;
+    margin-top: 50px;
+    background-position: center;
+    border-radius: 80px;
+}
+.our-team .container .inner-card .card-2 .name-1{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--color-one);
+}
+.our-team .container .inner-card .card-2 .name-2{
+    font-weight: 500;
+    color: var(--color-text);
+    margin-top: -30px;
+}
+.our-team .container .inner-card .card-2 .button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+.our-team .container .inner-card .card-2 .button .button-1{
+    width: 40px;
+    height: 45px;
+    background-color: var(--color-base);
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-team .container .inner-card .card-2 .button .button-1 a{
+    color: var(--color-one);
+}
+.our-team .container .inner-card .card-2 .button .button-1:hover{
+    background-color: var(--color-two);
+}
+.our-team .container .inner-card .card-2 .button .button-1 a:hover{
+    color: var(--color-three);
+}
+
+.our-team .container .inner-card .card-2 .button .button-2{
+    width: 40px;
+    height: 45px;
+    background-color: var(--color-base);
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-team .container .inner-card .card-2 .button .button-2 a{
+    color: var(--color-one);
+}
+.our-team .container .inner-card .card-2 .button .button-2:hover{
+    background-color: var(--color-two);
+}
+.our-team .container .inner-card .card-2 .button .button-2 a:hover{
+    color: var(--color-three);
+}
+
+.our-team .container .inner-card .card-2 .button .button-3{
+    width: 40px;
+    height: 45px;
+    background-color: var(--color-base);
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-team .container .inner-card .card-2 .button .button-3 a{
+    color: var(--color-one);
+}
+.our-team .container .inner-card .card-2 .button .button-3:hover{
+    background-color: var(--color-two);
+}
+.our-team .container .inner-card .card-2 .button .button-3 a:hover{
+    color: var(--color-three);
+}
+
+.our-team .container .inner-card .card-3{
+    background-color: var(--color-three);
+    width: 250px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.our-team .container .inner-card .card-3 .img{
+    width: 150px;
+    height: 150px;
+    background-image: url(/hoc_front_end_2023/Do-Tuan_Minh-project-1/image/team3.jpg);
+    background-size: cover;
+    margin-top: 50px;
+    background-position: center;
+    border-radius: 80px;
+}
+.our-team .container .inner-card .card-3 .name-1{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--color-one);
+}
+.our-team .container .inner-card .card-3 .name-2{
+    font-weight: 500;
+    color: var(--color-text);
+    margin-top: -30px;
+}
+.our-team .container .inner-card .card-3 .button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+.our-team .container .inner-card .card-3 .button .button-1{
+    width: 40px;
+    height: 45px;
+    background-color: var(--color-base);
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-team .container .inner-card .card-3 .button .button-1 a{
+    color: var(--color-one);
+}
+.our-team .container .inner-card .card-3 .button .button-1:hover{
+    background-color: var(--color-two);
+}
+.our-team .container .inner-card .card-3 .button .button-1 a:hover{
+    color: var(--color-three);
+}
+
+.our-team .container .inner-card .card-3 .button .button-2{
+    width: 40px;
+    height: 45px;
+    background-color: var(--color-base);
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-team .container .inner-card .card-3 .button .button-2 a{
+    color: var(--color-one);
+}
+.our-team .container .inner-card .card-3 .button .button-2:hover{
+    background-color: var(--color-two);
+}
+.our-team .container .inner-card .card-3 .button .button-2 a:hover{
+    color: var(--color-three);
+}
+
+.our-team .container .inner-card .card-3 .button .button-3{
+    width: 40px;
+    height: 45px;
+    background-color: var(--color-base);
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-team .container .inner-card .card-3 .button .button-3 a{
+    color: var(--color-one);
+}
+.our-team .container .inner-card .card-3 .button .button-3:hover{
+    background-color: var(--color-two);
+}
+.our-team .container .inner-card .card-3 .button .button-3 a:hover{
+    color: var(--color-three);
+}
+
+
+.our-team .container .inner-card .card-4{
+    background-color: var(--color-three);
+    width: 250px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.our-team .container .inner-card .card-4 .img{
+    width: 150px;
+    height: 150px;
+    background-image: url(/hoc_front_end_2023/Do-Tuan_Minh-project-1/image/team4.jpg);
+    background-size: cover;
+    margin-top: 50px;
+    background-position: center;
+    border-radius: 80px;
+}
+.our-team .container .inner-card .card-4 .name-1{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--color-one);
+}
+.our-team .container .inner-card .card-4 .name-2{
+    font-weight: 500;
+    color: var(--color-text);
+    margin-top: -30px;
+}
+.our-team .container .inner-card .card-4 .button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+.our-team .container .inner-card .card-4 .button .button-1{
+    width: 40px;
+    height: 45px;
+    background-color: var(--color-base);
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-team .container .inner-card .card-4 .button .button-1 a{
+    color: var(--color-one);
+}
+.our-team .container .inner-card .card-4 .button .button-1:hover{
+    background-color: var(--color-two);
+}
+.our-team .container .inner-card .card-4 .button .button-1 a:hover{
+    color: var(--color-three);
+}
+
+.our-team .container .inner-card .card-4 .button .button-2{
+    width: 40px;
+    height: 45px;
+    background-color: var(--color-base);
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-team .container .inner-card .card-4 .button .button-2 a{
+    color: var(--color-one);
+}
+.our-team .container .inner-card .card-4 .button .button-2:hover{
+    background-color: var(--color-two);
+}
+.our-team .container .inner-card .card-4 .button .button-2 a:hover{
+    color: var(--color-three);
+}
+
+.our-team .container .inner-card .card-4 .button .button-3{
+    width: 40px;
+    height: 45px;
+    background-color: var(--color-base);
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-team .container .inner-card .card-4 .button .button-3 a{
+    color: var(--color-one);
+}
+.our-team .container .inner-card .card-4 .button .button-3:hover{
+    background-color: var(--color-two);
+}
+.our-team .container .inner-card .card-4 .button .button-3 a:hover{
+    color: var(--color-three);
+}
+@media (max-width: 1228px){
+    .our-team .container .inner-card .card-1{
+        width: 23%;
+    }
+    .our-team .container .inner-card .card-2{
+        width: 23%;
+    }
+    .our-team .container .inner-card .card-3{
+        width: 23%;
+    }
+    .our-team .container .inner-card .card-4{
+        width: 23%;
+    }
+    .our-team .container .inner-title .title{
+        text-align: center;
+    }
+}
+@media (max-width: 992px){
+    .our-team .container .inner-card{
+        flex-wrap: wrap;
+    }
+    .our-team .container .inner-card .card-1{
+        width: 48%;
+    }
+    .our-team .container .inner-card .card-2{
+        width: 48%;
+    }
+    .our-team .container .inner-card .card-3{
+        width: 48%;
+        margin-top: 30px;
+    }
+    .our-team .container .inner-card .card-4{
+        width: 48%;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 572px){
+    .our-team .container .inner-card .card-1{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .our-team .container .inner-card .card-2{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .our-team .container .inner-card .card-3{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .our-team .container .inner-card .card-4{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+/*END Our Team*/
+/*Section-4*/
+.section-4 .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    position: relative;
+}
+.section-4 .container .img{
+    width: 100%;
+    height: 600px;
+    background-image: url(/hoc_front_end_2023/Do-Tuan_Minh-project-1/image/background3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+.section-4 .container .inner-card{
+    background-color: var(--color-three);
+    width: 92%;
+    height: 120px;
+    position: relative;
+    top: -60px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section-4 .container .inner-card .disc{
+    color: var(--color-text);
+    font-size: 18px;
+}
+.section-4 .container .inner-card .title{
+    color: var(--color-one);
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.section-4 .container .inner-card .button{
+    background-color: var(--color-one);
+    width: 15%;
+    height: 55%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-three);
+}
+@media (max-width: 992px){
+    .section-4 .container .inner-card{
+        flex-wrap: wrap;
+        padding: 20px;
+        height: 250px;
+        justify-content: flex-start;
+    }
+    .section-4 .container .inner-card .text-1{
+        width: 50%;
+    }
+    .section-4 .container .inner-card .text-2{
+        width: 50%;
+    }
+    .section-4 .container .inner-card .text-3{
+        width: 50%;
+    }
+    .section-4 .container .inner-card .text-4{
+        width: 50%;
+    }
+    .section-4 .container .inner-card .button{
+        width: 100px;
+        height: 50px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 572px){
+    .section-4 .container .inner-card{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 400px;
+        text-align: center;
+    }
+}
+/*END Section-4*/
+/*Our Client*/
+/*END Our Client*/
+/*View in Action*/
+/*END View in Action*/
+/*Share work*/
+.share-work .container{
+    background-color: #DCE8EB;
+    border-radius: 15px;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 80px;
+    margin-top: 50px;
+}
+.share-work .container .inner-title .disc{
+    font-size: 15px;
+    color: var(--color-text);
+    font-weight: 500;
+}
+.share-work .container .inner-title .title{
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 15px;
+}
+.share-work .container .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.share-work .container .form .full-name{
+    width: 30%;
+    height: 40px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+}
+.share-work .container .form .email-adress{
+    width: 30%;
+    margin-left: 5%;
+    height: 40px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+}
+.share-work .container .form .subject{
+    width: 30%;
+    margin-left: 5%;
+    height: 40px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+}
+.share-work .container .form .textarea{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+}
+.share-work .container .form .subscribe{
+    width: 200px;
+    height: 60px;
+    background-color: var(--color-one);
+    color: var(--color-three);
+    border: none;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+/*END Share work*/
+/*Map*/
+iframe{
+    width: 100%;
+    margin-top: 110px;
+}
+/*END Map*/
+/*Footer*/
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: var(--color-one);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+footer .inner-title{
+    color: var(--color-three);
+    font-size: 18px;
+}
+/*END Footer*/
