@@ -1346,6 +1346,7 @@ header .bar{
     border: none;
     border-radius: 8px;
     margin-top: 30px;
+    cursor: pointer;
 }
 /*END Share work*/
 /*Map*/
